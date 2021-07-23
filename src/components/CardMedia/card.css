@@ -1,0 +1,39 @@
+.card {
+    cursor: pointer;
+}
+
+.card__title {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.card__image {
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    transition: transform .1s ease;
+}
+
+.card__body {
+    height: 480px;
+    background-image: url('../../images/bkgr.png');
+}
+
+.card__image:hover {
+    transform: rotate(4deg);
+}
+
+.card__information {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__description {
+    color: #2c2c2c;
+    font-size: 26px;
+}

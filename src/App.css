@@ -1,0 +1,124 @@
+.App {
+  overflow: hidden;
+}
+
+.App__header {
+  background-image: url('./images/header.png');
+  height: 500px;
+  padding: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  background-image: url('./images/logo-fiat.png');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 75px;
+}
+
+.App__main {
+  background: #fcf9f1;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.column-1, .column-3 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .column-1 {
+    width: 49%;
+  }
+  .column-3 {
+    width: 33%;
+  }
+}
+
+/* Stili per la sezione Expanded */
+
+.expanded {
+  position: absolute;
+  background-color: #232323;
+  right: 0;
+  padding: 50px;
+  height: 900px;
+  z-index: 99;
+}
+
+.expanded__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Animazione */
+
+.alert-enter {
+  transform: translate(0, -100%);
+}
+
+.alert-enter-active {
+  transform: translateX(0);
+  transition: all 300ms, transform 300ms;
+}
+
+.alert-exit-active {
+  transform: translate(0, -100%);
+}
+
+.alice-carousel {
+  position: absolute;
+  top: 410px;
+  z-index: 999;
+}
+
+/* Custom style Input footer */
+
+input {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #fff;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+/* Custom css per carousel */
+
+.item {
+  height: 400px;
+  margin-right: 40px;
+  background-image: url('./images/bkgr.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alice-carousel__dots {
+  text-align: left !important;
+}
+
+.alice-carousel__next-btn, .alice-carousel__prev-btn {
+  display: none !important;
+}

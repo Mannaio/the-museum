@@ -1,0 +1,11 @@
+.App__footer {
+    padding: 50px;
+    color: #fff;
+    background-color: #030909;
+}
+
+.App__subfooter {
+    padding: 30px 50px;
+    color: #030909;
+    background-color: #D6001C;
+}
