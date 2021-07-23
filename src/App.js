@@ -51,9 +51,6 @@ const DescriptionText = styled.span`
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
-  @media only screen and (min-width: 992px) {
-    font-size: 31px;
-  }
 `;
 
 const DescriptionExpandedText = styled.span`
